@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Languages</title>
+</head>
+
+<body>
+   <header class="text-gray-600 body-font ">
+       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           <span class="ml-3 text-xl">Interview_Q</span>
+         </a>
+         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+               <a class="mr-12 text-gray-600 hover:text-black hover:underline" title="Home" href="welcome.html">Home</a>
+               <a class="mr-12 text-gray-600 hover:text-black hover:underline" title="Languages" href="language.html"><b>Languages</b></a>
+               <a class="mr-12 text-gray-600 hover:text-black hover:underline" title="Data Structures" href="dsa.html">Data Structures</a>
+               <!-- <a class="mr-12 text-gray-600 hover:text-black hover:underline" title="Aptitude" href="#">Aptitude</a> -->
+               <a class="mr-12 text-gray-600 hover:text-black hover:underline" title="Companies" href="companies.html">Companies</a>
+               <a class="mr-12 text-gray-600 hover:text-black hover:underline" title="Contact Us" href="contact.html">Contact Us</a>
+               <a class="mr-5 text-gray-600 hover:text-black hover:underline" title="Log Out" href="/logout">Log Out</a>
+         </nav>
+       </div>
+     </header>
+   
+   
+   <hr><hr><hr><hr>
+
+
+<style type="text/css">
+*{
+ margin: 0px;
+ padding: 0px;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+ }
+
+.title{
+  text-align: center;
+  padding: 10px;
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+   padding: 3px;
+   text-align: center;
+ 
+   padding-top: 10px;
+   border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+</style>
+
+
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/c++.png')}}">
+</div>
+<div class="title">
+ <h1>
+C-Plus-Plus</h1>
+</div>
+<div class="des">
+ <p>C++ is a general-purpose programming language and widely used nowadays for competitive programming. C++ runs on lots of platform...</p>
+<button><a href="languages/cpp.html" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/java.jpg')}}">
+</div>
+<div class="title">
+ <h1>Java</h1>
+</div>
+<div class="des">
+ <p>Java is most popular and widely used programming languages. It's most popular language...</p>
+ <button><a href="languages/java.html" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/Python.png')}}">
+</div>
+<div class="title">
+ <h1>Python</h1>
+</div>
+<div class="des">
+ <p>Python is a high-level, general-purpose and popular programming language. Python is a popular language...</p>
+ <button><a href="languages/python.html" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/JavaScript.jpg')}}">
+</div>
+<div class="title">
+ <h1>JavaScript</h1>
+</div>
+<div class="des">
+ <p>JavaScript is the world's most popular programming language. JavaScript is easy to learn...</p>
+ <button><a href="languages/js.html" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/react.png')}}">
+</div>
+<div class="title">
+ <h1>React</h1>
+</div>
+<div class="des">
+ <p>React is a JavaScript library created by Facebook. React is a User Interface (UI) library. React is a tool for building UI components...</p>
+ <button><a href="#" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/Node.jpg')}}">
+</div>
+<div class="title">
+ <h1>Node</h1>
+</div>
+<div class="des">
+ <p>Node.js is a server-side platform built on Google Chrome's JavaScript Engine. Node.js is an open source, cross-platform runtime environment...</p>
+ <button><a href="#" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/MongoDB.jpg')}}">
+</div>
+<div class="title">
+ <h1>MongoDB</h1>
+</div>
+<div class="des">
+ <p>MongoDB is a cross-platform, document oriented database that provides, high performance, high availability, and easy scalability.</p>
+ <button><a href="#" class="">Questions</a></button>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{url_for('static', filename='images/php.jpg')}}">
+</div>
+<div class="title">
+ <h1>Php</h1>
+</div>
+<div class="des">
+ <p>PHP is a general-purpose scripting language geared toward web development. </p>
+ <button><a href="languages/php.html" class="">Questions</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+
+</div>
+
+
+<hr><hr>
+
+<footer class="text-gray-600 body-font bg-white">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-black">
+      <span class="ml-3 text-xl">Interview_Q</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Interview —
+      <a href="https://twitter.com/" class="text-gray-500 ml-1" rel="noopener noreferrer" target="_blank">@Interview_Q</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-400" href="https://facebook.com/">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-400" href="https://twitter.com/">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-400" href="https://instagram.com/">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-400" href="https://www.linkedin.com/">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+
+</body>
+</html>
